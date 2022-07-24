@@ -6,9 +6,13 @@ The source file contains an ASCII game that has collision checking, jump checkin
 
 THIS DOESNT WORK ON LINUX YET // COMING SOON
 
+```Game```
+>![Game](game.png)
 
->![My image](ignore.png)
 
+
+```Editor```
+>![Editor](editor.png)
 
 >![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 ```
@@ -30,11 +34,11 @@ using std::streamsize;
 constexpr char KEY_UP = 'w';
 constexpr char KEY_LEFT = 'a';
 constexpr char KEY_RIGHT = 'd';
-string map[] = { "                                     ",
-                "                                     ",
-                "                                     ",
-                "                                     ",
-                "                                     ",
+string map[] = { "-------------------------------------",
+                "      --                          -- ",
+                "             --          ---         ",
+                "     ---                             ",
+                "                         --          ",
                 "              ---                    ",
                 "           ---- -              ------",
                 "---------  -    -----     ---  -    -",
@@ -135,7 +139,6 @@ void display(struct Player player)
         }
         cout << "\n";
     }
-    cout << player.isGrounded << '\n';
 }
 
 // Handle input from user to move the position of the player
